@@ -1,0 +1,33 @@
+{
+    "name": "ZF-OCS",
+    "description": null,
+    "sections": [
+        {
+            "number": 1,
+            "scale": {
+                "No": 0,
+                "Yes": 1
+            },
+            "questions": [
+                "Sometimes things happen to people that are unusually or especially frightening, horrible, or traumatic. For example:, a serious accident or fire, a physical or sexual assault or abuse, an earthquake or flood, a war, seeing someone be killed or seriously injured, having a loved one die through homicide or suicide. Have you ever experienced this kind of event?"
+            ]
+        },
+        {
+            "number": 2,
+            "scale": {
+                "No": 0,
+                "Yes": 1
+            },
+            "prefix": "In the past month, have you",
+            "questions": [
+                "had nightmares about the event or thought about the event when you did not want to?",
+                "tried hard not to think about the event or went out of your way to avoid situations that reminded you of the event?",
+                "been constantly on guard, watchful, or easily startled?",
+                "felt numb or detached from people, activities, or your surroundings?",
+                "felt guilty or unable to stop blaming yourself or others for the event(s) or any problems the event(s) may have caused?"
+            ]
+        }
+    ],
+    "source": "https://www.ptsd.va.gov/professional/assessment/screens/pc-ptsd.asp",
+    "accessed": "2023-03-25"
+}

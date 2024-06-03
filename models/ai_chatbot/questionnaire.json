@@ -1,0 +1,45 @@
+{
+    "HAM_D":{
+        "depressed_mood": [],
+
+        "feelings_of_guilt": [],
+
+        "suicidal thoughts": [],
+
+        "insomnia_initial": [],
+
+        "insomnia_middle": [],
+
+        "insomnia_delayed": [],
+
+        "work_and_interests": [],
+
+        "retardations": [],
+
+        "agitation": [],
+
+        "anxiety_psychic": [],
+
+        "anxiety_somatic": [],
+
+        "somatic_symptoms_gastrointestinal": [],
+
+        "somatic_symptoms_general": [],
+
+        "general_symptoms": [],
+
+        "hpynochondriasis": [],
+
+        "weight_loss": [],
+
+        "insight": [],
+
+        "diurnal_variation": [],
+
+        "depersonalization_and_derealization": [],
+
+        "paranoid_symptoms": [],
+        
+        "obessional_symptoms": {}
+    }
+}

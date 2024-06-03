@@ -1,0 +1,27 @@
+{
+    "PHQ-9":
+        {
+            "filename": "phq-9.json",
+            "topic": "depression"
+        },
+    "GAD-7":
+        {
+            "filename": "gad-7.json",
+            "topic": "anxiety"
+        },
+    "ASRS-5":
+        {
+            "filename": "asrs-5.json",
+            "topic": "adhd"
+        },
+    "ZF-OCS":
+        {
+            "filename": "zf-ocs.json",
+            "topic": "ocd"
+        },
+    "PC-PTSD":
+        {
+            "filename": "pc-ptsd",
+            "topic": "ptsd"
+        }
+}

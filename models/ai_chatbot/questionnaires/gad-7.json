@@ -1,0 +1,57 @@
+{
+    "name": "GAD-7",
+    "description": null,
+    "sections": [
+        {
+            "number": 1,
+            "scale": {
+                "Not at all": 0,
+                "Several days": 1,
+                "More than half the days": 2,
+                "Nearly every day": 3
+            },
+            "prefix": "Over the last two weeks, how often have you been bothered by",
+            "questions": [
+                "feeling nervous, anxious, or on edge?",
+                "not being able to stop or control worrying?",
+                "worrying too much about different things?",
+                "trouble relaxing?",
+                "being so restless that it is hard to sit still?",
+                "becoming easily annoyed or irritable?",
+                "feeling afraid, as if something awful might happen?"
+            ]
+        },
+        {
+            "number": 2,
+            "scale": {
+                "Not difficult at all": 0,
+                "Somewhat difficult": 1,
+                "Very difficult": 2,
+                "Extremely difficult": 3
+            },
+            "prefix": "",
+            "questions": [
+                "How difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?"
+            ]
+        }
+    ],
+    "scoring": [
+        {
+            "section": 1,
+            "ranges": [
+                [0,5],
+                [5,10],
+                [10,15],
+                [15,22]
+            ],
+            "severity": [
+                "Minimal",
+                "Mild",
+                "Moderate",
+                "Severe"
+            ]
+        }
+    ], 
+    "source": "https://adaa.org/sites/default/files/GAD-7_Anxiety-updated_0.pdf",
+    "accessed": "2023-03-25"
+}

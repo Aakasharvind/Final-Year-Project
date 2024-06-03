@@ -1,0 +1,60 @@
+{
+    "name": "Hamilton-17",
+    "description": "Hamilton Depression Rating Scale (HAM-D) for assessing symptoms of depression",
+    "sections": [
+        {
+            "number": 1,
+            "scale": {
+                "Not present": 0,
+                "Mild": 1,
+                "Moderate": 2,
+                "Severe": 3
+            },
+            "prefix": "Normally,Over the last two weeks, how often have you experienced",
+            "questions": [
+                "Depressed mood?",
+                "Feelings of guilt?",
+                "Suicidal thoughts?",
+                "Difficulty falling asleep?",
+                "Waking during the night?",
+                "Waking during early hours of the morning?",
+                "Impact on work and activities?",
+                "Slowness in movements or speech?",
+                "Agitation?",
+                "Psychological anxiety?",
+                "Physical complaints related to anxiety?",
+                "Loss of appetite?",
+                "General physical symptoms?",
+                "Genital-sexual symptoms (loss of libido, impaired sexual performance, menstrual disturbance)?",
+                "Health-related anxiety?",
+                "Loss of weight?",
+                "Lack of insight?"
+            ]
+        }
+    ],
+    "scoring": [
+        {
+            "section": 1,
+            "ranges": [
+                [0, 7],
+                [8, 17],
+                [18, 24],
+                [25, 52]
+            ],
+            "severity": [
+                "None or minimal",
+                "Mild",
+                "Moderate",
+                "Severe"
+            ],
+            "action": [
+                "No significant depression",
+                "Mild depression (monitor closely)",
+                "Moderate depression (consider intervention)",
+                "Severe depression (intervention required)"
+            ]
+        }
+    ],
+    "source": "TRANSPLANT-AI ",
+    "accessed": "2024-03-07"
+}

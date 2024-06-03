@@ -1,0 +1,33 @@
+{
+    "name": "ZF-OCS",
+    "description": null,
+    "sections": [
+        {
+            "number": 1,
+            "scale": {
+                "No": 0,
+                "Yes": 1
+            },
+            "questions": [
+                "Do you wash or clean a lot?",
+                "Do you check things a lot?",
+                "Is there any thought that keeps bothering you that you would like to get rid of, but can't?",
+                "Do your daily activities take a long time to finish?",
+                "Are you concerned about orderliness or symmetry?",
+                "depended on others to keep your life in order and attend to details?"
+            ]
+        },
+        {
+            "number": 2,
+            "scale": {
+                "No": 0,
+                "Yes": 1
+            },
+            "questions": [
+                "Do these problems trouble you?"
+            ]
+        }
+    ],
+    "source": "https://www.ementalhealth.ca/index.php?m=survey&ID=13",
+    "accessed": "2023-03-25"
+}

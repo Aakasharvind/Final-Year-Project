@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Report</title>
+    <!-- Patient Data CSS  -->
+    <link href="{{url_for('static', filename='css/patient.css')}}" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Patient Report</h1>
+        <div class="patient-info">
+            <div class="patient-details">
+                <h2>Patient Details</h2>
+                <div class="detail">
+                    <img src="{{url_for('static', filename='img/id_icon.jpg')}}" alt="Patient ID" class="icon">
+                    <span class="label">Patient ID:</span>
+                    <span class="value">{{patient_data.appointments[0].id|default('N/A')}}</span>
+                </div>
+                <div class="detail">
+                    <img src="{{url_for('static', filename='img/name_icon.png')}}" alt="Patient Name" class="icon">
+                    <span class="label">Name:</span>
+                    <span class="value">{{patient_data.first_name + patient_data.last_name|default('N/A')}}</span>
+                </div>
+                <div class="detail">
+                    <img src="{{url_for('static', filename='img/status_icon.png')}}" alt="Transplant Status" class="icon">
+                    <span class="label">Transplant Status:</span>
+                    <span class="value">{{patient_data.transplant_status|default('N/A')}}</span>
+                </div>
+                <div class="detail">
+                    <img src="{{url_for('static', filename='img/blood_icon.png')}}" alt="Blood Type" class="icon">
+                    <span class="label">Blood Group:</span>
+                    <span class="value">{{patient_data.medical_data.bg|default('N/A')}}</span>
+                   
+                </div>
+                <div class="detail">
+                    <img src="{{url_for('static', filename='img/kidney_icon.png')}}" alt="Transplanted Organ" class="icon">
+                    <span class="label">Organ:</span>
+                    <span class="value">{{patient_data.organ|default('Kidney')}}</span>
+                </div>
+            </div>
+            <div class="patient-schedule">
+                <h2>Patient Schedule</h2>
+                <div class="schedule-item">
+                    <img src="{{url_for('static', filename='img/schedule_icon.png')}}" alt="Transplanted Organ" class="icon">
+                    <span class="date">{{patient_data.appointments[-1].start|default('N/A')}}</span>
+                    <span class="event">Previous Appointment</span>
+                </div>
+                <div class="schedule-item">
+                    <img src="{{url_for('static', filename='img/next_schedule.png')}}" alt="Transplanted Organ" class="icon">
+                    <span class="date">{{patient_data.next_appointment|default('N/A')}}</span>
+                    <span class="event">Upcoming Appointment</span>
+                </div>
+
+                <div class="schedule-item">
+                    <img src="{{url_for('static', filename='img/date_icon.jpg')}}" alt="Transplanted Organ" class="icon">
+                    <span class="date">{{patient_data.date_of_transplant|default('N/A')}}</span>
+                    <span class="event">Date of Transplant(if occured)</span>
+                </div>
+                
+            </div>
+        </div>
+
+        {% if mental_health_assessment_data %}
+        <div class="assessment">
+            <h2><img src="{{url_for('static', filename='img/mental_health_icon.png')}}" alt="Mental Health Icon" class="icon"> Mental Health Assessment</h2>
+
+            {% for assessment_data in mental_health_assessment_data %}
+            <div class="assessment-details">
+                <div class="detail">
+                    <span class="label">Type of Assessment:</span>
+                    <span class="value">{{assessment_data.assess_type|default('N/A')}}</span>
+                </div>
+                <div class="detail">
+                    <span class="label">Response:</span>
+                    <span class="value">{{assessment_data.response|default('N/A')}}</span>
+                </div>
+                <div class="detail">
+                    <span class="label">Depression Severity:</span>
+                    <span class="value">{{assessment_data.depression_severity|default('N/A')}}</span>
+                </div>
+                <div class="detail">
+                    <span class="label">Recommended Action:</span>
+                    <span class="value">{{assessment_data.recommended_action|default('N/A')}}</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="charts">
+            <div class="chart" id="depression-chart">
+                <h2>Depression Level Analysis</h2>
+                <!-- <div class="bar-chart">
+                    <div class="bar moderate"></div>
+                </div> -->
+                <div id="depressionData" hidden></div>
+                <canvas id="severityRadarChart" width="800" height="400"></canvas>
+            </div>
+        
+            <div class="chart" id="appointment-chart">
+                <h2>Appointment Schedule for Last 12 Months</h2>
+                <div class="appointment-calendar" id="appointment-calendar"></div>
+            </div>
+            
+        </div>
+        
+    </div>
+    {% else %}
+    <div class="assessment-unavailable">
+        <p>Your Mental health Assessment details and Depression severity are unavailable. 
+            Please take the Mental Health Assessment.</p>
+    </div>
+    {% endif %}
+
+    <!-- Patient JS -->
+    <script src="{{url_for('static', filename = 'js/patient.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.0.2/chartjs-plugin-annotation.min.js"></script>
+</body>
+</html>

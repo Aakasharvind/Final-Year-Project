@@ -1,0 +1,40 @@
+{
+    "name": "ASRS-5",
+    "description": null,
+    "sections": [
+        {
+            "number": 1,
+            "scale": {
+                "Never": 0,
+                "Rarely": 1,
+                "Sometimes": 2,
+                "Often": 3,
+                "Very Often": 4
+            },
+            "prefix": "Over the past six months, how often have you",
+            "questions": [
+                "had difficulty concentrating on what people are saying to you even when they are speaking to you directly?",
+                "left your seat in meetings or other situations in which you are expected to remain seated?",
+                "had difficulty unwinding and relaxing when you have time to yourself?",
+                "found yourself finishing the sentences of the people you are talking to before they can finish them themselves when you're in a conversation?",
+                "put things off until the last minute?",
+                "depended on others to keep your life in order and attend to details?"
+            ]
+        }
+    ],
+    "scoring": [
+        {
+            "section": 1,
+            "ranges": [
+                [0,14],
+                [14,25]
+            ],
+            "severity": [
+                "Does not screen positive",
+                "Screens positive"
+            ]
+        }
+    ], 
+    "source": "https://www.hcp.med.harvard.edu/ncs/ftpdir/adhd/ASRS-5_English.pdf",
+    "accessed": "2023-03-25"
+}

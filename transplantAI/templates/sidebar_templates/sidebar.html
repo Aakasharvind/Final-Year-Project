@@ -1,0 +1,124 @@
+<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
+        <div class="sidebar-brand-icon rotate-n-15">
+            <img src="{{url_for('static', filename='img/ambulance.gif')}}" alt="kidney gif"
+                style="height: 60px; width: 60px;">
+        </div>
+        <div class="sidebar-brand-text mx-3">Transplant<sup>AI</sup></div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item">
+        <a class="nav-link" href="/dashboard">
+            <img src="{{url_for('static', filename='img/dashboard.gif')}}" alt="stats gif"
+                style="height: 30px; width: 30px;">
+            <span>Dashboard</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    {% if role != "Doctor" %}
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Recipient
+    </div>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="/chatbot">
+            <img src="{{url_for('static', filename='img/ai_chatbot.gif')}}" alt="AI chatbot gif"
+                style="height: 35px; width: 35px;">
+            <span>FAQ Chatbot</span>
+        </a>
+    </li>
+
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="/kidney_wait_time_prediction">
+            <img src="{{url_for('static', filename='img/wait_time.gif')}}" alt="AI chatbot gif" style="height: 35px; width: 35px;">
+            <span>Kidney Wait-Time</span>
+        </a>
+    </li>
+
+    <li class="nav-item active">
+        <a class="nav-link collapsed" href="/kidney_rejection_prediction">
+            <img src="{{url_for('static', filename='img/rejection.gif')}}" alt="AI chatbot gif" style="height: 35px; width: 35px;">
+            <span>Kidney Rejection Status</span>
+        </a>
+    </li>
+
+    <li class="nav-item active">
+        <a class="nav-link collapsed" href="/mental_health_evaluation">
+            <img src="{{url_for('static', filename='img/mh_evaluation.gif')}}" alt="AI chatbot gif" style="height: 35px; width: 35px;">
+            <span>MH Evaluation</span>
+        </a>
+    </li>
+
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="/schedule">
+            <img src="{{url_for('static', filename='img/schedule.gif')}}" alt="AI chatbot gif"
+                style="height: 35px; width: 35px;">
+            <span>Schedule</span>
+        </a>
+    </li>
+
+    {% endif %}
+
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    {% if role == "Doctor" %}
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Doctor
+    </div>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="/schedule">
+            <img src="{{url_for('static', filename='img/appointment.gif')}}" alt="stats gif"
+                style="height: 35px; width: 35px;">
+            <span>Appointments</span>
+        </a>
+
+    </li>
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="/patient_report">
+            <img src="{{url_for('static', filename='img/appointment.gif')}}" alt="stats gif"
+                style="height: 35px; width: 35px;">
+            <span>Patient Report</span>
+        </a>
+
+    </li>
+
+    {% endif %}
+
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+    <!-- Sidebar Message -->
+    <div class="sidebar-card d-none d-lg-flex">
+        <img class="sidebar-card-illustration mb-2" src="{{url_for('static', filename='img/care.gif')}}"
+            alt="pledge donor gif" style="border-radius: 50%;">
+        <p class="text-center mb-2"><strong>Pledge as Donor</strong> to help save many lives!</p>
+        <a class="btn btn-success btn-sm" href="/pledgeAsDonor">Become a Donor</a>
+    </div>
+
+</ul>
+<!-- End of Sidebar -->

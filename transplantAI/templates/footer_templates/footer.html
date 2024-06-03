@@ -1,0 +1,67 @@
+     <!-- Scroll to Top Button-->
+     <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Are you sure to end the current session?</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="/logout">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- jQuery -->
+    <script src="{{url_for('static', filename = 'vendor/jquery/jquery.min.js')}}"></script>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="{{url_for('static', filename = 'vendor/jquery-easing/jquery.easing.min.js') }}"src=""></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="{{url_for('static', filename = 'js/sb-admin-2.min.js') }}"></script>
+
+    <!-- Charts -->
+    <script src="{{url_for('static', filename = 'vendor/chart.js/Chart.min.js') }}"></script>
+    <script src="{{url_for('static', filename = 'js/transplant_area_chart.js') }}"></script>
+    <script src="{{url_for('static', filename = 'js/kidney_donor_pie_chart.js') }}"></script>
+    <script src="{{url_for('static', filename = 'js/waiting_list_count_bar_graph.js') }}"></script>
+
+    <!-- Odometer  -->
+    <script src="{{url_for('static', filename = 'vendor/odometer/odometer.min.js') }}"></script>
+    <script src="{{url_for('static', filename = 'js/dashboard.js') }}"></script>
+
+    <!-- Registeration Form JS -->
+    <script src="{{url_for('static', filename = 'js/register.js') }}"></script>
+
+    <!-- AI Chatbot JS -->
+    <script src="{{url_for('static', filename = 'js/ai_chatbot.js') }}"></script>
+    
+    <!-- Gauge JS  -->
+    <!-- <script src="{{url_for('static', filename = 'vendor/gauge-js/gauge.min.js') }}"></script> -->
+
+    <!-- Kidney Wait-Time Prediction JS -->
+    <script src="{{url_for('static', filename = 'js/kidney_wait_time_prediction.js') }}"></script>
+
+    <!-- Full Calendar JS  -->
+    <script src="{{ url_for('static', filename='vendor/full-calendar-js/dist/index.global.min.js') }}"></script>
+    <script src="{{url_for('static', filename = 'js/schedule.js') }}"></script>
+
+
+</body>
+
+</html>

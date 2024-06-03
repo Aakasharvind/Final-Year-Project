@@ -1,0 +1,68 @@
+{
+    "name": "PHQ-9",
+    "description": null,
+    "sections": [
+        {
+            "number": 1,
+            "scale": {
+                "Not at all": 0,
+                "Several days": 1,
+                "More than half the days": 2,
+                "Nearly every day": 3
+            },
+            "prefix": "Over the last two weeks, how often have you been bothered by",
+            "questions": [
+                "having little interest or pleasure in doing things?",
+                "feeling down, depressed, or hopeless?",
+                "having trouble falling or staying asleep, or sleeping too much?",
+                "feeling tired or having little energy?",
+                "having poor appetite or overeating?",
+                "feeling bad about yourself - or that you are a failure or have let yourself or your family down?",
+                "having trouble concentrating on things, such as reading the newspaper or watching television?",
+                "moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?",
+                "having thoughts that you would be better off dead or of hurting yourself in some way?"
+            ]
+        },
+        {
+            "number": 2,
+            "scale": {
+                "Not difficult at all": 0,
+                "Somewhat difficult": 1,
+                "Very difficult": 2,
+                "Extremely difficult": 3
+            },
+            "prefix": "",
+            "questions": [
+                "How difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?"
+            ]
+        }
+    ],
+    "scoring": [
+        {
+            "section": 1,
+            "ranges": [
+                [0,5],
+                [5,10],
+                [10,15],
+                [15,20],
+                [20,28]
+            ],
+            "severity": [
+                "None-minimal",
+                "Mild",
+                "Moderate",
+                "Moderately severe",
+                "Severe"
+            ],
+            "action": [
+                "Patient may not need depression treatment",
+                "Use clinical judgment about treatment, based on patient's duration of symptoms and functional impairment",
+                "Use clinical judgment about treatment, based on patient's duration of symptoms and functional impairment",
+                "Treat using antidepressants, psychotherapy or a combination of treatment",
+                "Treat using antidepressants with or without psychotherapy"
+            ]
+        }
+    ], 
+    "source": "https://www2.gov.bc.ca/assets/gov/health/practitioner-pro/bc-guidelines/depression_patient_health_questionnaire.pdf",
+    "accessed": "2023-03-25"
+}

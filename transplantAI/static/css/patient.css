@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.patient-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.patient-details,
+.patient-schedule {
+    flex: 1;
+}
+
+.detail {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.value {
+    margin-left: 10px;
+}
+
+.patient-schedule {
+    margin-left: 20px;
+}
+
+.schedule-item {
+    margin-bottom: 10px;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.event {
+    margin-left: 10px;
+}
+
+
+.assessment {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.assessment h2 {
+    margin-bottom: 10px;
+}
+
+.assessment-details .detail {
+    margin-bottom: 10px;
+}
+
+.assessment-details .label {
+    font-weight: bold;
+}
+
+.assessment-details .value {
+    margin-left: 10px;
+}
+
+
+
+.bar-chart {
+    height: 30px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+}
+
+.none {
+    width: 0%;
+    background-color: #28a745; /* Green for no depression */
+}
+
+.mild {
+    width: 33%;
+    background-color: #ffc107; /* Yellow for mild depression */
+}
+
+.moderate {
+    width: 34%;
+    background-color: #ff9800; /* Orange for moderate depression */
+}
+
+.severe {
+    width: 33%;
+    background-color: #f44336; /* Red for severe depression */
+}
+
+.appointment-calendar {
+    margin-top: 20px;
+}
+
+
+/* Your existing CSS styles */
+
+.charts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.chart {
+    width: 48%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.chart h2 {
+    margin-bottom: 20px;
+}
+
+.appointment-chart {
+    height: 300px; /* Adjust height as needed */
+}
+.appointment-calendar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 200px; /* Adjust height as needed */
+    margin-top: 10px;
+}
+
+.bar {
+    flex: 0 0 calc(100% / 12);
+    background-color: #007bff; /* Adjust bar color as needed */
+    border-radius: 5px 5px 0 0; /* Rounded top corners */
+    text-align: center;
+    position: relative;
+}
+
+.bar .label {
+    position: absolute;
+    bottom: -20px; /* Adjust label position */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px; /* Adjust label font size */
+    white-space: nowrap;
+}
